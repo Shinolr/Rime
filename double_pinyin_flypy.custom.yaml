@@ -1,3 +1,5 @@
+patch:
+  translator/preedit_format: {}
 __patch:
 # Rx: emoji:customize:schema=double_pinyin_flypy {
   - patch/+:
