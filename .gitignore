@@ -1,0 +1,9 @@
+.DS_Store
+build/
+*.txt
+*.userdb/
+installation.yaml
+sync/
+trash/
+user.yaml
+plum/
