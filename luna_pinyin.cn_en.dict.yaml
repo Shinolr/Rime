@@ -17,6 +17,8 @@ sort: by_weight
 use_preset_vocabulary: true
 ...
 
+ʀ	smr
+s	sms
 AAC	aac
 AAX	aax
 AcFUN	acfun
@@ -606,7 +608,8 @@ iPad mini	ipad
 iPad Pro	ipad
 iPadOS	ipad
 iPhone	iphone
-iPhone X	iphone ten
+iPhone Xʀ	iphone
+iPhone Xs	iphone
 iPod	ipod
 iPod classic	ipod
 iPod mini	ipod

@@ -46,7 +46,7 @@ import_tables:
   - luna_pinyin.sgmain
   - luna_pinyin.poetry
   - luna_pinyin.hanyu
-#  - luna_pinyin.cn_en
+  - luna_pinyin.cn_en
 ...
 
 
