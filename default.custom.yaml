@@ -5,6 +5,25 @@
 #   %APPDATA%\Rime       (windows)
 
 patch:
+  key_binder/bindings:
+    - when: paging 
+      accept: bracketleft 
+      send: Page_Up 
+    - when: has_menu
+      accept: bracketright
+      send: Page_Down 
+    - when: paging
+      accept: minus
+      send: Page_Up 
+    - when: has_menu
+      accept: equal
+      send: Page_Down
+    - when: paging
+      accept: comma
+      send: Page_Up 
+    - when: has_menu
+      accept: period
+      send: Page_Down
   switcher/hotkeys: 
     - "Control+grave"
     - "Control+s"
