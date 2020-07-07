@@ -1,3 +1,6 @@
+# Rime schema
+# encoding: utf-8
+
 patch:
   translator/preedit_format: {}
 __patch:
