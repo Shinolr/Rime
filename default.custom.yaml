@@ -32,3 +32,13 @@ patch:
     # - schema: zyenpheng     # 中古漢語全拼
     # - schema: ipa_xsampa    # X-SAMPA 國際音標
     # - schema: emoji         # emoji表情
+
+  ascii_composer: 
+    # good_old_caps_lock: true
+    switch_key:
+      Caps_Lock: noop
+      Control_L: noop
+      Control_R: noop
+      Eisu_toggle: clear
+      Shift_L: commit_code
+      Shift_R: commit_code 
