@@ -4,6 +4,21 @@
 patch:
   translator/preedit_format: {}
   translator/dictionary: luna_pinyin.extended
+  switches:
+  - name: ascii_mode
+    reset: 0
+    states: [ 中文, 西文 ]
+  - name: full_shape
+    states: [ 半角, 全角 ]
+  - name: simplification
+    states: [ 漢字, 汉字 ]
+  - name: ascii_punct
+    states: [ 。，, ．，]
+  - name: extended_charset  #生僻字开关
+    states: ["通用", "增廣"]
+  engine/filters/@next:
+    - cjk_minifier  #過濾拼音輸入法中的罕用字
+  translator/enble_charset_filter: true #启用罕见字過濾
 
   #custom_phrase:
     #dictionary: ""
@@ -21,7 +36,7 @@ patch:
     enable_completion: false
     enable_sentence: false
     initial_quality: 1
-  engine/translators/@3:  table_translator@custom_phrase
+  engine/translators/@3: table_translator@custom_phrase
 
 # 加載 easy_en 依賴
   schema/dependencies/@1: easy_en
